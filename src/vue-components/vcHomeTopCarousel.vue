@@ -10,7 +10,7 @@
       <p>to my collection of vintage and antique radios. Here you will find the Lorem ipsum dolor sit amet, consectetur adipisicing elit...<br><br>Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cu...</p>
     </div>
     <div class="col-sm-8 main_carousel--right">
-      <img src="img/ui/carousel_s1.jpg">
+      <!-- <img src="img/ui/carousel_s1.jpg"> -->
     </div>
   </div>
   <div class="row">
@@ -22,7 +22,7 @@
       <br><br>Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cu...</p>
     </div>
     <div class="col-sm-8 main_carousel--right">
-      <img src="img/ui/carousel_s2.jpg">
+      <!-- <img src="img/ui/carousel_s2.jpg"> -->
     </div>
   </div>
   <div class="row">
@@ -33,7 +33,7 @@
       <p>Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cu...</p>
     </div>
     <div class="col-sm-8 main_carousel--right">
-      <img src="img/ui/carousel_s3.jpg">
+      <!-- <img src="img/ui/carousel_s3.jpg"> -->
     </div>
   </div>
 </div>

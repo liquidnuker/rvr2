@@ -3,19 +3,19 @@
 <!-- siema2 -->
 <div class="col-sm-12 brand_carousel">
   <div>
-    <img src="img/brands/zenith.jpg">
+    <img src="">
   </div>
   <div>
-    <img src="img/brands/rca.jpg">
+    <img src="">
   </div>
   <div>
-    <img src="img/brands/magnavox.jpg">
+    <img src="">
   </div>
   <div>
-    <img src="img/brands/firestone.jpg">
+    <img src="">
   </div>
   <div>
-    <img src="img/brands/motorola.jpg">
+    <!-- <img src="img/brands/brand1.jpg"> -->
   </div>  
 </div>
 <!-- /siema2 -->  
