@@ -3,9 +3,6 @@ notes.txt
 *.glue
 temp
 
-## upload image later
-img
-
 ##
 uploads
 connect.php

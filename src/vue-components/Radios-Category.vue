@@ -202,7 +202,7 @@ export default {
   data() {
       return {
         // API_DIR: "./src/js/ajax/",
-        API_DIR: "https://raw.githubusercontent.com/liquidnuker/r_vintageRadios/master/src/js/ajax/",
+        API_DIR: "https://raw.githubusercontent.com/liquidnuker/rvr2/master/src/js/ajax/",
         
         // radio displays
         currentItems: store.currentItems,
