@@ -196,7 +196,8 @@ const vcFooter = () => import ('./vcFooter.vue');
 export default {
   data() {
     return {
-      API_DIR: "./src/js/ajax/",
+      // API_DIR: "./src/js/ajax/",
+      API_DIR: "https://raw.githubusercontent.com/liquidnuker/rvr2/master/src/js/ajax/",
 
       categoryName: "",
       randomCategory: "",
@@ -221,17 +222,17 @@ export default {
   },
   watch: {
     $route: function () {
-      this.loadRandomCategory(this.API_DIR);
+      this.loadRandomCategory();
     }
   },
   mounted: function () {
-    this.loadRandomCategory(this.API_DIR);
+    this.loadRandomCategory();
   },
   methods: {
-      loadRandomCategory: function(dir) {
+      loadRandomCategory: function() {
         let selectedItems = shuffleCategories(radioCategories);
         let dataz = selectedItems[0];
-        const jsonUrl = dir + dataz + ".json";
+        const jsonUrl = this.API_DIR + dataz + ".json";
             
         axios.get(jsonUrl)
         .then((response) => {

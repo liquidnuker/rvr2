@@ -264,11 +264,11 @@ export default {
           this.showCatDesc();
 
           // loadItems
-          this.loadItems(this.API_DIR);
+          this.loadItems();
         }
       },
-      loadItems: function(dir) {
-        let jsonUrl = dir + this.currentCategory + ".json";
+      loadItems: function() {
+        let jsonUrl = this.API_DIR + this.currentCategory + ".json";
         
         axios.get(jsonUrl)
         .then((response) => {

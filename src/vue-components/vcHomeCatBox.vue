@@ -45,7 +45,7 @@ export default {
     ],
     components: {},
     mounted: function () {
-      console.log("vcHomeCatBox.vue mounted");
+      
     },
     methods: {}
 }

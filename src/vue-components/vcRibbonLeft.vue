@@ -34,7 +34,7 @@ export default {
   components: {
   },
   mounted: function () {
-    // console.log("vcRibbonFeatured.vue mounted");
+    
   },
   methods: {        
   }

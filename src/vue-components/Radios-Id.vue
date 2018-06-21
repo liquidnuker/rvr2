@@ -116,7 +116,8 @@ const vcFooter = () => import ('./vcFooter.vue');
 export default {
   data() {
       return {
-        API_DIR: "./src/js/ajax/",
+        // API_DIR: "./src/js/ajax/",
+        API_DIR: "https://raw.githubusercontent.com/liquidnuker/rvr2/master/src/js/ajax/",
         // radio displays
         currentCategory: "",
         filteredId: "",
@@ -161,12 +162,12 @@ export default {
           this.showCatDesc();
 
           // loadItem
-          this.loadItems(this.API_DIR);
+          this.loadItems();
         }
       },
-      loadItems: function(dir) {
+      loadItems: function() {
         let filteredItem = "";
-        let jsonUrl = dir + this.currentCategory + ".json";
+        let jsonUrl = this.API_DIR + this.currentCategory + ".json";
         
         axios.get(jsonUrl)
         .then((response) => {
