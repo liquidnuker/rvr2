@@ -1,0 +1,28 @@
+.breadcrumb {
+  @extend %andada--regular;
+  @extend %link_color--default;
+  text-align: left;
+  padding: 6px;
+  
+  a {
+    @extend %link_color--default;
+
+    &:hover {
+      color: #931916;
+    }
+  }
+
+  p {
+    display: inline-block;
+    color: #931916;
+  }
+
+  svg {
+    @extend %display--inline-block;
+    cursor: pointer;
+    vertical-align: text-top;
+    fill: #6d4603;
+    width: 18px;
+    height: 18px;
+  }
+}

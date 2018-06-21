@@ -1,0 +1,73 @@
+/* pages/_radios.scss
+=================================================*/
+#galleryContainer {
+  @extend %margin--auto;
+
+  #ajaxbox {
+    @extend %pos--relative;
+    @extend %display--block;
+    @extend %margin--6;
+    @extend %padd--6;
+    // min-width: 150px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #827f52;
+
+    &:hover {
+      background-color: #ffe682;
+      border: 1px solid #827f52;
+    }
+
+    img {
+      @extend %pos--absolute;
+      @extend %display--block;
+      /*width: 100%;  /*optional */
+      /*min-width: 108px; optional */
+      cursor: pointer;
+      max-height: 150px;
+      max-width: 100%;
+      height: auto;
+      /* absolute center */
+      margin: auto;
+      top: 0; left: 0; bottom: 0; right: 0;
+      z-index: 6;
+    }
+
+    .make {
+      color: #44171b;
+    }
+
+    .model {
+      @extend %display--inline-block;
+      @extend %padd--4;
+      color: #931916;
+      cursor: pointer;
+    }
+  }
+
+  .ajaxboxText {
+    @extend %pos--absolute;
+    @extend %text--center;
+    @extend %margin--auto;
+    background-color: #d5ae6b;
+    width: 100%;
+    left: 0; bottom: 0; right: 0;
+    z-index: 7;    
+  }
+
+  .ajaxbox-bg-skew {
+    @extend %margin--auto;
+    @extend %pos--relative;
+    @include rotateSkew(-8deg, -8deg, 0deg);
+    background-color: #ecbb44;    
+    height: 100px;
+    width: 95%;
+    top: 40px;    
+    z-index: 5;
+  }
+}   
+
+.category_description {
+  @extend %lrbg1;
+}
+

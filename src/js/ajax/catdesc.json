@@ -1,0 +1,50 @@
+{"catdesc":[
+  {
+  "category": "bakelite",
+  "title":  "Bakelite",
+  "preview": "categories/bakelite.jpg",
+  "description": "bakelite category description"
+  },
+  {
+  "category": "crystal",
+  "title":  "Crystal",
+  "preview": "categories/crystal.jpg",
+  "description": "crystal category description"
+  },
+  {
+  "category": "horntype",
+  "title":  "Horntype",
+  "preview": "categories/horntype.jpg",
+  "description": "horntype category description"
+  },
+  {
+  "category": "minitube",
+  "title":  "Minitube",
+  "preview": "categories/minitube.jpg",
+  "description": "minitube category description"
+  },
+  {
+  "category": "portable",
+  "title":  "Portable",
+  "preview": "categories/portable.jpg",
+  "description": "portable category description"
+  },
+  {
+  "category": "transistor",
+  "title":  "Transistor",
+  "preview": "categories/transistor.jpg",
+  "description": "transistor category description"
+  },
+  {
+  "category": "unusual",
+  "title":  "Unusual",
+  "preview": "categories/unusual.jpg",
+  "description": "unusual category description"
+  },
+  {
+  "category": "woodcase",
+  "title":  "Woodcase",
+  "preview": "categories/woodcase.jpg",
+  "description": "woodcase category description"
+  }
+]}

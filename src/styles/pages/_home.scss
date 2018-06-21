@@ -1,0 +1,8 @@
+// home.vue
+// ==================================================/
+.row_subheader {
+  @extend %margin--auto;
+  @extend %pos--relative;
+  background-color: #d5ae6b;
+  z-index: 1;
+}

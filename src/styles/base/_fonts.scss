@@ -1,0 +1,27 @@
+// @font-face {
+//     font-family: "andada-regular";
+//     src: url('../../fonts/Andada-Regular.otf');
+// }
+
+// @import url('https://fonts.googleapis.com/css?family=Andada');
+
+%andada--regular {
+  font-family: "Andada", serif;
+}
+
+// 
+// ==================================================/
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, 
+.btn // todo: place in separate buttons.scss
+ {
+  @extend %andada--regular;
+}
+
+h2 {
+  font-weight: bold;
+}

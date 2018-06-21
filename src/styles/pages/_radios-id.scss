@@ -1,0 +1,40 @@
+// Radios-Id.vue
+// ==================================================/
+.radios_id {
+  .radios_id_photo,
+  .radios_id_desc {
+    @extend %padd--4;
+  }
+
+  img {
+    border: 1px solid #6d4603;
+  }
+
+  p {
+    color: #44171b;
+    line-height: 120%;
+  } 
+
+  .item-description {
+    text-align: left;
+  }
+
+  .item-description_title {
+    color: #931916;
+    margin-bottom: 4px;
+  } 
+
+  // mobile portrait (320x480) 
+  @include mq($from: mobile) {
+    .item-description img {
+      max-width: 100%;
+    }
+  }
+
+  // *mobile landscape (480x320)
+  @include mq($from: mobileLandscape) {
+    .item-description img {
+      width: 100%;
+    }
+  }
+}

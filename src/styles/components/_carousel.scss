@@ -1,0 +1,48 @@
+/* carousel */
+.carousel_box {
+  @extend %margin--auto;
+}
+
+.main_carousel {
+  background-color: #f9e9cf;
+}
+
+.main_carousel {
+  
+  .main_carousel_title,
+  p {
+    padding-left: 6px;
+  }
+
+  .main_carousel_title {
+    color: #931916;
+    font-size: 1.6em; /* 14px/16=0.875em */
+  }
+
+  p {
+    color: #44171b;
+  }
+}
+
+.main_carousel--right {
+  height: 182px;
+}
+
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .main_carousel--right {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .main_carousel--right {
+    img {
+      width: 100%;
+    }
+  }
+}
+

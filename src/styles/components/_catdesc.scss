@@ -1,0 +1,23 @@
+// vcCatDesc.vue
+// ==================================================/
+.catdesc {
+  padding-left: 6px;
+
+  .catdesc_title {
+    font-size: 1.6em;
+    color: #931916;
+  }
+
+  .catdesc_description {
+    color: #44171b;
+  }
+
+  .catdesc_preview {
+    height: 182px;
+    overflow: hidden;
+
+    img {
+      width: 100%
+    }
+  }
+}
