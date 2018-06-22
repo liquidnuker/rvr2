@@ -11,7 +11,7 @@
   <nav class="list_group--custom">
     <h2 class="list_group--item">Vintage Radios</h2>
     <template v-for="i in categoryList">
-      <a v-bind:href="'index.html#/radios/:' + i.category" class="list_group--item">
+      <a v-bind:href="'index.html#/radios/' + i.category" class="list_group--item">
         {{ i.name }}
       </a>
     </template>    

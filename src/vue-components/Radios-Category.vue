@@ -188,7 +188,6 @@ import {router} from "../js/router.js";
 import {store} from "../js/store.js";
 import {radioCategories} from "../js/radiocategories.js";
 import {categoryExists} from "../js/categoryexists.js";
-import {removeParamColons} from "../js/removeparamcolons.js";
 
 import Pager from "../js/pager.js";
 import {pageBtns} from "../js/pagebtns.js";
@@ -250,7 +249,8 @@ export default {
       },
       checkCategory: function () {
         // check if category exists
-        let categoryToCheck = removeParamColons(this.$route.params.category)
+        let categoryToCheck = this.$route.params.category;
+
         if (!categoryExists(categoryToCheck, radioCategories)) {
           console.log("404/ push to default items");
           router.push({
@@ -313,7 +313,7 @@ export default {
         });
       },
       pushRoute: function (category, id) {
-        router.push("/radios/:" + category + "/:" + id);
+        router.push("/radios/" + category + "/" + id);
       },
       activatePager: function() {
       this.pg = null;

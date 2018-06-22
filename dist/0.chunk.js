@@ -2003,18 +2003,7 @@ var categoryExists = function categoryExists(category, array) {
 
 
 /***/ }),
-/* 54 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return removeParamColons; });
-var removeParamColons = function removeParamColons(routeParam) {
-  var replacer = routeParam.replace(/:/g, '');
-  return replacer;
-};
-
-
-/***/ }),
+/* 54 */,
 /* 55 */,
 /* 56 */,
 /* 57 */,
@@ -2048,10 +2037,9 @@ var removeParamColons = function removeParamColons(routeParam) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_store_js__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_radiocategories_js__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_categoryexists_js__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__js_removeparamcolons_js__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__js_pager_js__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__js_pagebtns_js__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__js_jsondir_js__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__js_pager_js__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__js_pagebtns_js__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__js_jsondir_js__ = __webpack_require__(46);
 //
 //
 //
@@ -2236,7 +2224,6 @@ var removeParamColons = function removeParamColons(routeParam) {
 //
 //
 //
-
 
 
 
@@ -2265,7 +2252,7 @@ var vcFooter = function vcFooter() {
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
     return {
-      API_DIR: __WEBPACK_IMPORTED_MODULE_8__js_jsondir_js__["a" /* jsonDir */],
+      API_DIR: __WEBPACK_IMPORTED_MODULE_7__js_jsondir_js__["a" /* jsonDir */],
 
       // radio displays
       currentItems: __WEBPACK_IMPORTED_MODULE_2__js_store_js__["a" /* store */].currentItems,
@@ -2313,7 +2300,8 @@ var vcFooter = function vcFooter() {
     },
     checkCategory: function checkCategory() {
       // check if category exists
-      var categoryToCheck = Object(__WEBPACK_IMPORTED_MODULE_5__js_removeparamcolons_js__["a" /* removeParamColons */])(this.$route.params.category);
+      var categoryToCheck = this.$route.params.category;
+
       if (!Object(__WEBPACK_IMPORTED_MODULE_4__js_categoryexists_js__["a" /* categoryExists */])(categoryToCheck, __WEBPACK_IMPORTED_MODULE_3__js_radiocategories_js__["a" /* radioCategories */])) {
         console.log("404/ push to default items");
         __WEBPACK_IMPORTED_MODULE_1__js_router_js__["a" /* router */].push({
@@ -2372,11 +2360,11 @@ var vcFooter = function vcFooter() {
       });
     },
     pushRoute: function pushRoute(category, id) {
-      __WEBPACK_IMPORTED_MODULE_1__js_router_js__["a" /* router */].push("/radios/:" + category + "/:" + id);
+      __WEBPACK_IMPORTED_MODULE_1__js_router_js__["a" /* router */].push("/radios/" + category + "/" + id);
     },
     activatePager: function activatePager() {
       this.pg = null;
-      this.pg = new __WEBPACK_IMPORTED_MODULE_6__js_pager_js__["a" /* default */]({
+      this.pg = new __WEBPACK_IMPORTED_MODULE_5__js_pager_js__["a" /* default */]({
         perPage: this.perPage,
         data: this.currentItems
       });
@@ -2406,7 +2394,7 @@ var vcFooter = function vcFooter() {
     setPageBtns: function setPageBtns() {
       this.temp = [];
       for (var i = 0, l = this.pg.getTotalPages(); i < l; i++) {
-        this.temp.push(Object(__WEBPACK_IMPORTED_MODULE_7__js_pagebtns_js__["a" /* pageBtns */])(i, l));
+        this.temp.push(Object(__WEBPACK_IMPORTED_MODULE_6__js_pagebtns_js__["a" /* pageBtns */])(i, l));
       }
     },
     changePageBtns: function changePageBtns() {

@@ -1859,18 +1859,7 @@ var categoryExists = function categoryExists(category, array) {
 
 
 /***/ }),
-/* 54 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return removeParamColons; });
-var removeParamColons = function removeParamColons(routeParam) {
-  var replacer = routeParam.replace(/:/g, '');
-  return replacer;
-};
-
-
-/***/ }),
+/* 54 */,
 /* 55 */,
 /* 56 */,
 /* 57 */,
@@ -1908,8 +1897,7 @@ var removeParamColons = function removeParamColons(routeParam) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_store_js__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_radiocategories_js__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_categoryexists_js__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__js_removeparamcolons_js__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__js_jsondir_js__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__js_jsondir_js__ = __webpack_require__(46);
 //
 //
 //
@@ -2012,7 +2000,6 @@ var removeParamColons = function removeParamColons(routeParam) {
 //
 //
 //
-
 
 
 
@@ -2038,7 +2025,7 @@ var vcFooter = function vcFooter() {
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
     return {
-      API_DIR: __WEBPACK_IMPORTED_MODULE_6__js_jsondir_js__["a" /* jsonDir */],
+      API_DIR: __WEBPACK_IMPORTED_MODULE_5__js_jsondir_js__["a" /* jsonDir */],
 
       // radio displays
       currentCategory: "",
@@ -2073,7 +2060,8 @@ var vcFooter = function vcFooter() {
   methods: {
     checkCategory: function checkCategory() {
       // check if category exists
-      var categoryToCheck = Object(__WEBPACK_IMPORTED_MODULE_5__js_removeparamcolons_js__["a" /* removeParamColons */])(this.$route.params.category);
+      var categoryToCheck = this.$route.params.category;
+
       if (!Object(__WEBPACK_IMPORTED_MODULE_4__js_categoryexists_js__["a" /* categoryExists */])(categoryToCheck, __WEBPACK_IMPORTED_MODULE_3__js_radiocategories_js__["a" /* radioCategories */])) {
         console.log("404");
       } else {
@@ -2096,7 +2084,7 @@ var vcFooter = function vcFooter() {
 
       __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(jsonUrl).then(function (response) {
         filteredItem = response.data[_this.currentCategory].filter(function (el) {
-          return el.id === Object(__WEBPACK_IMPORTED_MODULE_5__js_removeparamcolons_js__["a" /* removeParamColons */])(_this.$route.params.id);
+          return el.id === _this.$route.params.id;
         });
       }).then(function () {
         // check if id is undefined

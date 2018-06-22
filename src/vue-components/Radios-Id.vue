@@ -107,7 +107,6 @@ import {router} from "../js/router.js";
 import {store} from "../js/store.js";
 import {radioCategories} from "../js/radiocategories.js";
 import {categoryExists} from "../js/categoryexists.js";
-import {removeParamColons} from "../js/removeparamcolons.js";
 
 import {jsonDir} from "../js/jsondir.js";
 
@@ -152,7 +151,8 @@ export default {
     methods: {
       checkCategory: function () {
         // check if category exists
-        let categoryToCheck = removeParamColons(this.$route.params.category)
+        let categoryToCheck = this.$route.params.category;
+        
         if (!categoryExists(categoryToCheck, radioCategories)) {
           console.log("404");
         } else {
@@ -174,7 +174,7 @@ export default {
         axios.get(jsonUrl)
         .then((response) => {
           filteredItem = response.data[this.currentCategory].filter((el) => {
-            return el.id === removeParamColons(this.$route.params.id);
+            return el.id === this.$route.params.id;
           });
         })
         .then(() => {

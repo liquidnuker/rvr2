@@ -2661,7 +2661,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       staticClass: "ajaxbox-bg-skew"
     }), _vm._v(" "), _c('a', {
       attrs: {
-        "href": 'index.html#/radios/:' + _vm.categoryName + '/:' + i.id
+        "href": 'index.html#/radios/' + _vm.categoryName + '/' + i.id
       }
     }, [_c('img', {
       attrs: {

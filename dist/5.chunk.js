@@ -144,7 +144,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     return [_c('a', {
       staticClass: "list_group--item",
       attrs: {
-        "href": 'index.html#/radios/:' + i.category
+        "href": 'index.html#/radios/' + i.category
       }
     }, [_vm._v("\r\n        " + _vm._s(i.name) + "\r\n      ")])]
   })], 2)])
