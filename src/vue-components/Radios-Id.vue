@@ -154,7 +154,10 @@ export default {
         let categoryToCheck = this.$route.params.category;
         
         if (!categoryExists(categoryToCheck, radioCategories)) {
-          console.log("404");
+          console.log("radios-id 404");
+          
+          // redirect to home instead of 404
+          router.push({path: "/"});
         } else {
           // set to currentCategory + breadcrumb
           this.currentCategory = categoryToCheck;
@@ -180,7 +183,10 @@ export default {
         .then(() => {
           // check if id is undefined
           if (!filteredItem[0]) {
-            console.log("404");
+            console.log("radios id 404");
+            // redirect to home instead of 404
+            router.push({path: "/"});
+
           } else {
             // attach to filteredId display + breadcrumb
             this.filteredId = filteredItem;

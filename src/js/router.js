@@ -9,6 +9,9 @@ const vcHome = (resolve) => import("../vue-components/Home.vue").then(resolve);
 const vcRadios = (resolve) => import("../vue-components/Radios.vue").then(resolve);
 const vcRadiosCategory = (resolve) => import("../vue-components/Radios-Category.vue").then(resolve);
 const vcRadiosId = (resolve) => import("../vue-components/Radios-Id.vue").then(resolve);
+const vcGlobal404 = (resolve) => import("../vue-components/global404.vue").then(resolve);
+
+
 
 const routes = [{
   path: "/",
@@ -23,6 +26,10 @@ const routes = [{
 }, {
   path: "/radios/:category/:id",
   component: vcRadiosId
+},
+{
+  path: "*",
+  component: vcGlobal404
 }];
 
 const router = new VueRouter({
