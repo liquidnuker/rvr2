@@ -11,17 +11,17 @@
   <!--end li subheader-->
   <!-- begin featured item data -->
   <div class="row featured_item_data" id="featured_item_data">
-    <a v-bind:href="'index.html#/radios/:' + featuredItemType + '/:' + featuredItemId" class="item_id">
+    <a v-bind:href="'index.html#/radios/' + featuredItemType + '/' + featuredItemId" class="item_id">
       <h2>{{ featuredItemId }}</h2>
     </a><br>
-    <a v-bind:href="'index.html#/radios/:' + featuredItemType + '/:' + featuredItemId" class="item_id">
+    <a v-bind:href="'index.html#/radios/' + featuredItemType + '/' + featuredItemId" class="item_id">
       <img v-bind:src="'img/' + featuredItemType + '/' + 
-      featuredItemImg + '_full.jpg'">
+      featuredItemImg + '_thumb.jpg'">
     </a>
     <p>Make: {{ featuredItemMake }}</p>
     <p>Model: {{ featuredItemModel }}</p>
     <p>Category:
-      <a v-bind:href="'index.html#/radios/:' + featuredItemType" class="item_id">
+      <a v-bind:href="'index.html#/radios/' + featuredItemType" class="item_id">
         {{ featuredItemType }}
       </a>
     </p>

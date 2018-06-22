@@ -48,7 +48,7 @@
             </a>&nbsp;
             <a v-bind:href="'index.html#/'">Home</a>&nbsp;&gt;
             <a v-bind:href="'index.html#/radios'">Radios</a>&nbsp;&gt;
-            <a v-bind:href="'index.html#/radios/:' + bcCategory">{{ bcCategory }}</a>&nbsp;&gt;
+            <a v-bind:href="'index.html#/radios/' + bcCategory">{{ bcCategory }}</a>&nbsp;&gt;
             <p>{{ bcId }}</p>
           </div>
           <!-- end breadcrumb -->
