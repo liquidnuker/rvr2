@@ -189,6 +189,8 @@ import {shuffleCategories} from "../js/shuffle.js";
 import Pager from "../js/pager.js";
 import {pageBtns} from "../js/pagebtns.js";
 
+import {jsonDir} from "../js/jsondir.js";
+
 const vcCategories = () => import ('./vcCategories.vue');
 const vcFeaturedItems = () => import ('./vcFeaturedItems.vue');
 const vcRadiosTopCarousel = () => import ('./vcRadiosTopCarousel.vue');
@@ -196,8 +198,7 @@ const vcFooter = () => import ('./vcFooter.vue');
 export default {
   data() {
     return {
-      // API_DIR: "./src/js/ajax/",
-      API_DIR: "https://raw.githubusercontent.com/liquidnuker/rvr2/master/src/js/ajax/",
+      API_DIR: jsonDir,
 
       categoryName: "",
       randomCategory: "",

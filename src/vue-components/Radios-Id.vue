@@ -109,6 +109,8 @@ import {radioCategories} from "../js/radiocategories.js";
 import {categoryExists} from "../js/categoryexists.js";
 import {removeParamColons} from "../js/removeparamcolons.js";
 
+import {jsonDir} from "../js/jsondir.js";
+
 const vcCategories = () => import ('./vcCategories.vue');
 const vcFeaturedItems = () => import ('./vcFeaturedItems.vue');
 const vcCatDesc = () => import ('./vcCatDesc.vue');
@@ -116,8 +118,8 @@ const vcFooter = () => import ('./vcFooter.vue');
 export default {
   data() {
       return {
-        // API_DIR: "./src/js/ajax/",
-        API_DIR: "https://raw.githubusercontent.com/liquidnuker/rvr2/master/src/js/ajax/",
+        API_DIR: jsonDir,
+
         // radio displays
         currentCategory: "",
         filteredId: "",
