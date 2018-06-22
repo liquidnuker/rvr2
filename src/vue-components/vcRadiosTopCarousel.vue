@@ -25,6 +25,8 @@
 import axios from "axios";
 import Siema from '../js/vendor/siema.min.js';
 import {shuffleCategories} from "../js/shuffle.js";
+
+import {jsonDir} from "../js/jsondir.js";
 export default {
   data () {
     return {
@@ -33,7 +35,7 @@ export default {
   },
   methods: {
     loadCategories: function() {
-      let jsonUrl = "./src/js/ajax/catdesc.json";
+      let jsonUrl =  jsonDir + "catdesc.json";
       
       axios.get(jsonUrl)
         .then((response) => {

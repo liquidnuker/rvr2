@@ -203,7 +203,7 @@ export default {
       // for category description
       showCatDesc: function() {
         let filteredDescription = "";
-        const catDescUrl = "./src/js/ajax/catdesc.json";
+        const catDescUrl = this.API_DIR + "catdesc.json";
 
         // filter description to show based on this.currentCategory
       axios.get(catDescUrl)
