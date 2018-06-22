@@ -12,8 +12,8 @@ webpackJsonp([1],[
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Radios_vue__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_759424fe_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_Radios_vue__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Radios_vue__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_759424fe_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_Radios_vue__ = __webpack_require__(77);
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -1847,10 +1847,21 @@ var shuffleCategories = function shuffleCategories(array) {
 /* 43 */,
 /* 44 */,
 /* 45 */,
-/* 46 */,
+/* 46 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return jsonDir; });
+var jsonDir = "./src/js/ajax/";
+// const jsonDir = "https://raw.githubusercontent.com/liquidnuker/rvr2/master/src/js/ajax/";
+
+
+
+/***/ }),
 /* 47 */,
 /* 48 */,
-/* 49 */
+/* 49 */,
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1921,7 +1932,7 @@ Pager.prototype = {
 };
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1996,7 +2007,6 @@ var pageBtns = function pageBtns(currentPage, nrOfPages) {
 
 
 /***/ }),
-/* 51 */,
 /* 52 */,
 /* 53 */,
 /* 54 */,
@@ -2017,7 +2027,8 @@ var pageBtns = function pageBtns(currentPage, nrOfPages) {
 /* 69 */,
 /* 70 */,
 /* 71 */,
-/* 72 */
+/* 72 */,
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2025,9 +2036,9 @@ var pageBtns = function pageBtns(currentPage, nrOfPages) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_radiocategories_js__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_shuffle_js__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_pager_js__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_pagebtns_js__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__js_jsondir_js__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_pager_js__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_pagebtns_js__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__js_jsondir_js__ = __webpack_require__(46);
 //
 //
 //
@@ -2222,16 +2233,16 @@ var pageBtns = function pageBtns(currentPage, nrOfPages) {
 
 
 var vcCategories = function vcCategories() {
-  return __webpack_require__.e/* import() */(5/* duplicate */).then(__webpack_require__.bind(null, 46));
+  return __webpack_require__.e/* import() */(5/* duplicate */).then(__webpack_require__.bind(null, 47));
 };
 var vcFeaturedItems = function vcFeaturedItems() {
   return __webpack_require__.e/* import() */(13).then(__webpack_require__.bind(null, 40));
 };
 var vcRadiosTopCarousel = function vcRadiosTopCarousel() {
-  return __webpack_require__.e/* import() */(10).then(__webpack_require__.bind(null, 73));
+  return __webpack_require__.e/* import() */(10).then(__webpack_require__.bind(null, 74));
 };
 var vcFooter = function vcFooter() {
-  return __webpack_require__.e/* import() */(4/* duplicate */).then(__webpack_require__.bind(null, 48));
+  return __webpack_require__.e/* import() */(4/* duplicate */).then(__webpack_require__.bind(null, 49));
 };
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
@@ -2330,10 +2341,10 @@ var vcFooter = function vcFooter() {
 });
 
 /***/ }),
-/* 73 */,
 /* 74 */,
 /* 75 */,
-/* 76 */
+/* 76 */,
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2705,26 +2716,6 @@ if (false) {
      require("vue-hot-reload-api").rerender("data-v-759424fe", esExports)
   }
 }
-
-/***/ }),
-/* 77 */,
-/* 78 */,
-/* 79 */,
-/* 80 */,
-/* 81 */,
-/* 82 */,
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return jsonDir; });
-var jsonDir = "./src/js/ajax/";
-// const jsonDir = "https://raw.githubusercontent.com/liquidnuker/rvr2/master/src/js/ajax/";
-
-
 
 /***/ })
 ]);

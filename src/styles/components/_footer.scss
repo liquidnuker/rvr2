@@ -1,3 +1,27 @@
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .footer1 {
+    .footer1_contents {
+      text-align: left;
+      width: 100%;
+      bottom: 4px;
+    } 
+  }
+}
+
+// *small tablet portrait (600x800)
+@include mq($from: smallTabletPortrait) {
+  .footer1 {
+    .footer1_contents {
+      text-align: right;
+      width: 50%;
+      bottom: 20%;
+    } 
+  }
+}
+
+// end breakpoints
+
 .footer1 {
   section {
     @extend %pos--relative;
@@ -5,13 +29,12 @@
   }
 
   .footer1_contents {
+    // background-color: #000;
     @extend %pos--absolute;
-    @extend %text--right;
+    word-wrap: break-word;
     padding: 4px 8px 4px 4px; /* trbl */
     right: 0;
-    bottom: 20%;
-    width: 50%;
-
+        
     p, 
     a {
       color: #F9E9CF;

@@ -1891,7 +1891,7 @@ if (false) {(function () {
 
 
 var vcRibbonLeft = function vcRibbonLeft() {
-  return __webpack_require__.e/* import() */(7/* duplicate */).then(__webpack_require__.bind(null, 47));
+  return __webpack_require__.e/* import() */(7/* duplicate */).then(__webpack_require__.bind(null, 48));
 };
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {

@@ -13,8 +13,8 @@ webpackJsonp([0],[
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Radios_Category_vue__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_cf3796cc_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_Radios_Category_vue__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Radios_Category_vue__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_cf3796cc_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_Radios_Category_vue__ = __webpack_require__(81);
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -1819,10 +1819,21 @@ module.exports = function spread(callback) {
 /* 43 */,
 /* 44 */,
 /* 45 */,
-/* 46 */,
+/* 46 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return jsonDir; });
+var jsonDir = "./src/js/ajax/";
+// const jsonDir = "https://raw.githubusercontent.com/liquidnuker/rvr2/master/src/js/ajax/";
+
+
+
+/***/ }),
 /* 47 */,
 /* 48 */,
-/* 49 */
+/* 49 */,
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1893,7 +1904,7 @@ Pager.prototype = {
 };
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1968,7 +1979,7 @@ var pageBtns = function pageBtns(currentPage, nrOfPages) {
 
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1980,7 +1991,7 @@ var store = {
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1992,7 +2003,7 @@ var categoryExists = function categoryExists(category, array) {
 
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2004,7 +2015,6 @@ var removeParamColons = function removeParamColons(routeParam) {
 
 
 /***/ }),
-/* 54 */,
 /* 55 */,
 /* 56 */,
 /* 57 */,
@@ -2027,20 +2037,21 @@ var removeParamColons = function removeParamColons(routeParam) {
 /* 74 */,
 /* 75 */,
 /* 76 */,
-/* 77 */
+/* 77 */,
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_router_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_store_js__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_store_js__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_radiocategories_js__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_categoryexists_js__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__js_removeparamcolons_js__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__js_pager_js__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__js_pagebtns_js__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__js_jsondir_js__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_categoryexists_js__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__js_removeparamcolons_js__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__js_pager_js__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__js_pagebtns_js__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__js_jsondir_js__ = __webpack_require__(46);
 //
 //
 //
@@ -2239,16 +2250,16 @@ var removeParamColons = function removeParamColons(routeParam) {
 
 
 var vcCategories = function vcCategories() {
-  return __webpack_require__.e/* import() */(5/* duplicate */).then(__webpack_require__.bind(null, 46));
+  return __webpack_require__.e/* import() */(5/* duplicate */).then(__webpack_require__.bind(null, 47));
 };
 var vcFeaturedItems = function vcFeaturedItems() {
   return __webpack_require__.e/* import() */(6/* duplicate */).then(__webpack_require__.bind(null, 40));
 };
 var vcCatDesc = function vcCatDesc() {
-  return __webpack_require__.e/* import() */(8/* duplicate */).then(__webpack_require__.bind(null, 54));
+  return __webpack_require__.e/* import() */(8/* duplicate */).then(__webpack_require__.bind(null, 55));
 };
 var vcFooter = function vcFooter() {
-  return __webpack_require__.e/* import() */(4/* duplicate */).then(__webpack_require__.bind(null, 48));
+  return __webpack_require__.e/* import() */(4/* duplicate */).then(__webpack_require__.bind(null, 49));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -2408,9 +2419,9 @@ var vcFooter = function vcFooter() {
 });
 
 /***/ }),
-/* 78 */,
 /* 79 */,
-/* 80 */
+/* 80 */,
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2795,22 +2806,6 @@ if (false) {
      require("vue-hot-reload-api").rerender("data-v-cf3796cc", esExports)
   }
 }
-
-/***/ }),
-/* 81 */,
-/* 82 */,
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return jsonDir; });
-var jsonDir = "./src/js/ajax/";
-// const jsonDir = "https://raw.githubusercontent.com/liquidnuker/rvr2/master/src/js/ajax/";
-
-
 
 /***/ })
 ]);
