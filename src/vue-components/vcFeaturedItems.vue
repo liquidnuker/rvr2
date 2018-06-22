@@ -15,7 +15,7 @@
       <h2>{{ featuredItemId }}</h2>
     </a><br>
     <a v-bind:href="'index.html#/radios/' + featuredItemType + '/' + featuredItemId" class="item_id">
-      <img v-bind:src="'img/' + featuredItemType + '/' + 
+      <img v-if="featuredItemType" :src="'img/' + featuredItemType + '/' + 
       featuredItemImg + '_thumb.jpg'">
     </a>
     <p>Make: {{ featuredItemMake }}</p>
@@ -43,7 +43,7 @@ export default {
         // API_DIR: "./src/js/ajax/",
         API_DIR: "https://raw.githubusercontent.com/liquidnuker/rvr2/master/src/js/ajax/",
 
-        featuredItemType: "",
+        featuredItemType: null,
         featuredItemId: "",
         featuredItemImg: "",
         featuredItemMake: "",
