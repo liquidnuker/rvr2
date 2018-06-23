@@ -36,12 +36,13 @@ import {getRandomInt} from "../js/randomint.js";
 import {radioCategories} from "../js/radiocategories.js";
 import {shuffleCategories} from "../js/shuffle.js";
 
+import {jsonDir} from "../js/jsondir.js";
+
 const vcRibbonLeft = () => import ('./vcRibbonLeft.vue');
 export default {
   data() {
       return {
-        // API_DIR: "./src/js/ajax/",
-        API_DIR: "https://raw.githubusercontent.com/liquidnuker/rvr2/master/src/js/ajax/",
+        API_DIR: jsonDir,
 
         featuredItemType: null,
         featuredItemId: "",
