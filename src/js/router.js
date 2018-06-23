@@ -1,7 +1,8 @@
 // import Vue from "vue";
 // import VueRouter from "vue-router";
 
-import vcRouterView from "../vue-components/RouterView.vue";
+import mainRouterView from "../vue-components/RouterView.vue";
+import vcFeaturedItemData from "../vue-components/vcFeaturedItemData.vue";
 
 Vue.use(VueRouter);
 
@@ -37,9 +38,16 @@ const router = new VueRouter({
 });
 
 new Vue({
-  el: "#app",
+  el: "#components_rightside",
   router,
-  render: h => h(vcRouterView)
+  render: h => h(mainRouterView)
+});
+
+// separate components
+new Vue({
+  el: "#featured_item_data",
+  router, // for getting route params inside component
+  render: h => h(vcFeaturedItemData)
 });
 
 export {router};

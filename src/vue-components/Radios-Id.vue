@@ -1,103 +1,77 @@
 <template>
 <div>
-  <!-- begin content -->
-  <header>
-    <div class="row">
+  <!--right side-->
+  <section class="col-sm-9">
+    <!-- begin category description -->
+    <div class="row category_description" id="category_description">
+      <vcCatDesc
+      :pr-category-title="categoryTitle"
+      :pr-category-description="categoryDescription"
+      :pr-category-preview="categoryPreview" />
+    </div>
+    <!-- end category description -->
+    <!--main item box-->
+    <!--begin subheader-->
+    <div class="row row_subheader">
       <div class="col-sm-12">
-        <!-- header -->
+        <p id="details">details</p>
       </div>
     </div>
-  </header>
-  <div class="row">
-    <div class="col-sm-12">
-      <!--left side-->
-      <section class="col-sm-3">
-        <!--begin categories -->
-        <vcCategories />
-        <!--end categories -->
-        <!--begin featured items mount point-->
-        <vcFeaturedItems />
-        <!--/end featured items mount point-->
-      </section>
-      <!--end left side-->
-      <!--right side-->
-      <section class="col-sm-9">
-        <!-- begin category description -->
-        <div class="row category_description" id="category_description">
-          <vcCatDesc
-          :pr-category-title="categoryTitle"
-          :pr-category-description="categoryDescription"
-          :pr-category-preview="categoryPreview" />
-        </div>
-        <!-- end category description -->
-        <!--main item box-->
-        <!--begin subheader-->
-        <div class="row row_subheader">
-          <div class="col-sm-12">
-            <p id="details">details</p>
-          </div>
-        </div>
-        <!--/subheader-->
-        <!--begin content box-->
-        <main class="row content_box">
-        <div class="row col-sm-12">
-          <!-- begin breadcrumb -->
-          <div v-if="bcVisible" class="breadcrumb">
-            <a v-bind:href="'index.html#/'">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-            </a>&nbsp;
-            <a v-bind:href="'index.html#/'">Home</a>&nbsp;&gt;
-            <a v-bind:href="'index.html#/radios'">Radios</a>&nbsp;&gt;
-            <a v-bind:href="'index.html#/radios/' + bcCategory">{{ bcCategory }}</a>&nbsp;&gt;
-            <p>{{ bcId }}</p>
-          </div>
-          <!-- end breadcrumb -->
-        </div>
-        <section id="gallery-placeholder" class="col-sm-12 radios_id">
-          <div v-for="i in filteredId" class="item-description">
-            <div class="row">
-              <div class="col-sm-6 radios_id_photo">
-                <a v-bind:href="'img/' + currentCategory + '/' + i.img + '_full.jpg'">
-                  <img v-bind:src="'img/' + currentCategory + '/' + i.img + '_full.jpg'">
-                </a>
-              </div>
-              <div class="col-sm-6 radios_id_desc">
-                <h2 class="item-description_title">
-                  {{ i.make }} {{ i.id }}
-                </h2>
-                <p>{{ i.description1 }}</p>
-                <p>{{ i.description2 }}</p>
-                <br>
-                <h2 class="item-description_title">
-                  Specifications:
-                </h2>
-                <p>Make: {{ i.make }}</p>
-                <p>Model: {{ i.id }}</p>
-                <p>Year: {{ i.year }}</p>
-                <p>Casing: {{ i.case }}</p>
-                <p>Speaker: {{ i.speaker }}</p>
-                <p>Tuning type: {{ i.tuning_type }}</p>
-                <p>Power requirements: {{ i.power }}</p>
-                <p>Frequency: {{ i.frequency }}</p>
-                <p>Measurements: {{ i.measurements }}</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="col-sm-12">
-          reserve
-        </div>
-        </main>
-        <!--/content box-->
-        <!--/main item box-->
-      </section>
-      <!--end right side-->
+    <!--/subheader-->
+    <!--begin content box-->
+    <main class="row content_box">
+    <div class="row col-sm-12">
+      <!-- begin breadcrumb -->
+      <div v-if="bcVisible" class="breadcrumb">
+        <a v-bind:href="'index.html#/'">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        </a>&nbsp;
+        <a v-bind:href="'index.html#/'">Home</a>&nbsp;&gt;
+        <a v-bind:href="'index.html#/radios'">Radios</a>&nbsp;&gt;
+        <a v-bind:href="'index.html#/radios/' + bcCategory">{{ bcCategory }}</a>&nbsp;&gt;
+        <p>{{ bcId }}</p>
+      </div>
+      <!-- end breadcrumb -->
     </div>
-  </div>
-  <footer class="row footer1">
-    <vcFooter />
-  </footer>
-  <!-- end content -->
+    <section id="gallery-placeholder" class="col-sm-12 radios_id">
+      <div v-for="i in filteredId" class="item-description">
+        <div class="row">
+          <div class="col-sm-6 radios_id_photo">
+            <a v-bind:href="'img/' + currentCategory + '/' + i.img + '_full.jpg'">
+              <img v-bind:src="'img/' + currentCategory + '/' + i.img + '_full.jpg'">
+            </a>
+          </div>
+          <div class="col-sm-6 radios_id_desc">
+            <h2 class="item-description_title">
+            {{ i.make }} {{ i.id }}
+            </h2>
+            <p>{{ i.description1 }}</p>
+            <p>{{ i.description2 }}</p>
+            <br>
+            <h2 class="item-description_title">
+            Specifications:
+            </h2>
+            <p>Make: {{ i.make }}</p>
+            <p>Model: {{ i.id }}</p>
+            <p>Year: {{ i.year }}</p>
+            <p>Casing: {{ i.case }}</p>
+            <p>Speaker: {{ i.speaker }}</p>
+            <p>Tuning type: {{ i.tuning_type }}</p>
+            <p>Power requirements: {{ i.power }}</p>
+            <p>Frequency: {{ i.frequency }}</p>
+            <p>Measurements: {{ i.measurements }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="col-sm-12">
+      reserve
+    </div>
+    </main>
+    <!--/content box-->
+    <!--/main item box-->
+  </section>
+  <!--end right side-->
 </div>
 </template>
 <script>
@@ -110,10 +84,7 @@ import {categoryExists} from "../js/categoryexists.js";
 
 import {jsonDir} from "../js/jsondir.js";
 
-const vcCategories = () => import ('./vcCategories.vue');
-const vcFeaturedItems = () => import ('./vcFeaturedItems.vue');
 const vcCatDesc = () => import ('./vcCatDesc.vue');
-const vcFooter = () => import ('./vcFooter.vue');
 export default {
   data() {
       return {
@@ -135,10 +106,7 @@ export default {
       }
     },
     components: {
-      vcCategories: vcCategories,
-      vcFeaturedItems: vcFeaturedItems,
       vcCatDesc: vcCatDesc,
-      vcFooter: vcFooter
     },
     mounted: function () {
       this.checkCategory();
