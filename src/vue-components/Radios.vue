@@ -1,7 +1,7 @@
 <template>
 <div>
   <!--right side-->
-  <section class="col-sm-9">
+  <div class="col-sm-9">
     <!--begin carousel_box-->
     <div class="row carousel_box">
       <!-- begin top carousel -->
@@ -151,7 +151,7 @@
     </main>
     <!--/content box-->
     <!--/main item box-->
-  </section>
+  </div>
   <!--end right side-->
   
 </div>

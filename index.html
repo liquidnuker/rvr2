@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="Cache-Control" content="max-age=1209600">
+  <!-- <meta http-equiv="Cache-Control" content="max-age=1209600"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vintage Radios</title>
   <meta name="description" content="vintage radios description1" />
@@ -25,7 +25,7 @@
     header
   </header>
   <main class="row container">
-  <div class="col-sm-3">
+  <aside class="col-sm-3">
     <!-- leftside -->
     <!-- begin categories -->
     <header class="row li_subheader categories">
@@ -33,12 +33,12 @@
         <!--begin li subheader items-->
         <!-- ribbon -->
         <!--ribbon back-->
-        <img src="img/ui/li_ribbon_back.png" class="ribbon--back">
+        <img src="img/ui/li_ribbon_back.png" class="ribbon--back" alt="">
         <!--/ribbon back-->
         <!--ribbon front-->
-        <img src="img/ui/li_ribbon_front.png" class="ribbon--front">
+        <img src="img/ui/li_ribbon_front.png" class="ribbon--front" alt="">
         <!-- label_featured -->
-        <img src="img/ui/label_categories.svg" class="label_categories">
+        <img src="img/ui/label_categories.svg" class="label_categories" alt="vintage radio categories" title="vintage radio categories" role="heading" aria-level="2">
         <!--/ribbon front-->
         <div class="row li_subheader--top">
           <div class="col-sm-12"></div>
@@ -52,28 +52,36 @@
     </header>
     <nav class="list_group--custom">
       <h2 class="list_group--item">Vintage Radios</h2>
-      <a href="#/radios/horntype" class="list_group--item">
+      <a href="#/radios/horntype" class="list_group--item" 
+      tabindex="0" aria-posinset="1" aria-setsize="8">
         Horn Type
       </a>
-      <a href="#/radios/crystal" class="list_group--item">
+      <a href="#/radios/crystal" class="list_group--item" 
+      tabindex="0" aria-posinset="2" aria-setsize="8">
         Crystal
       </a>
-      <a href="#/radios/transistor" class="list_group--item">
+      <a href="#/radios/transistor" class="list_group--item" 
+      tabindex="0" aria-posinset="3" aria-setsize="8">
         Transistor
       </a>
-      <a href="#/radios/minitube" class="list_group--item">
+      <a href="#/radios/minitube" class="list_group--item" 
+      tabindex="0" aria-posinset="4" aria-setsize="8">
         Mini Tube
       </a>
-      <a href="#/radios/woodcase" class="list_group--item">
+      <a href="#/radios/woodcase" class="list_group--item" 
+      tabindex="0" aria-posinset="5" aria-setsize="8">
         Wood Case
       </a>
-      <a href="#/radios/bakelite" class="list_group--item">
+      <a href="#/radios/bakelite" class="list_group--item" 
+      tabindex="0" aria-posinset="6" aria-setsize="8">
         Bakelite
       </a>
-      <a href="#/radios/portable" class="list_group--item">
+      <a href="#/radios/portable" class="list_group--item" 
+      tabindex="0" aria-posinset="7" aria-setsize="8">
         Portable
       </a>
-      <a href="#/radios/unusual" class="list_group--item">
+      <a href="#/radios/unusual" class="list_group--item" 
+      tabindex="0" aria-posinset="8" aria-setsize="8">
         Unusual
       </a>
     </nav>
@@ -85,12 +93,13 @@
         <!--begin li subheader items-->
         <!-- ribbon -->
         <!--ribbon back-->
-        <img src="img/ui/li_ribbon_back.png" class="ribbon--back">
+        <img src="img/ui/li_ribbon_back.png" class="ribbon--back" alt="">
         <!--/ribbon back-->
         <!--ribbon front-->
-        <img src="img/ui/li_ribbon_front.png" class="ribbon--front">
+        <img src="img/ui/li_ribbon_front.png" class="ribbon--front" alt="">
         <!-- label_featured -->
-        <img src="img/ui/label_featured.svg" class="label_categories">
+        <img src="img/ui/label_featured.svg" class="label_categories" 
+        alt="featured vintage radio" title="featured vintage radio" role="heading" aria-level="2">
         <!--/ribbon front-->
         <div class="row li_subheader--top">
           <div class="col-sm-12"></div>
@@ -109,22 +118,22 @@
     <!-- /end featured item data mount -->
     <!-- /end featured items -->
     <!-- /end leftside -->
-  </div>
+  </aside>
   <!-- begin rightside + mount-->
   <div class="row col-sm-9" id="components_rightside">
   </div>
   <!-- /end rightside + mount-->
   </main>
-  <div class="row footer1">
-    <section class="col-sm-12">
+  <footer class="row footer1">
+    <div class="col-sm-12 footer1_container">
       <div class="footer1_contents">
         <p>
           &copy;2017&nbsp;-&nbsp; date here
           <a href="https://github.com/liquidnuker/">https://github.com/liquidnuker/</a><br /><br />
         All product names, logos, and brands are property of their respective owners.</p>
       </div>
-    </section>
-  </div>
+    </div>
+  </footer>
   <!-- <script src="temp/vue_2.5.2.min.js"></script>
   <script src="temp/vue-router_3.0.1.min.js"></script> -->
   

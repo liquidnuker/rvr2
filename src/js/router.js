@@ -12,8 +12,6 @@ const vcRadiosCategory = (resolve) => import("../vue-components/Radios-Category.
 const vcRadiosId = (resolve) => import("../vue-components/Radios-Id.vue").then(resolve);
 const vcGlobal404 = (resolve) => import("../vue-components/global404.vue").then(resolve);
 
-
-
 const routes = [{
   path: "/",
   component: vcHome

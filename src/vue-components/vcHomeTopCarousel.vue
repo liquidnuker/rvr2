@@ -3,37 +3,37 @@
 <!-- siema -->
 <div class="col-sm-12 main_carousel">
   <div class="row">
-    <div class="col-sm-4">
+    <section class="col-sm-4">
       <h2 class="main_carousel_title">
         Welcome!
       </h2>
       <p>to my collection of vintage and antique radios. Here you will find the Lorem ipsum dolor sit amet, consectetur adipisicing elit...<br><br>Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cu...</p>
-    </div>
+    </section>
     <div class="col-sm-8 main_carousel--right">
-      <!-- <img src="img/ui/carousel_s1.jpg"> -->
+      <!-- <img src="img/ui/carousel_s1.jpg" alt=""> -->
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-4">
+    <section class="col-sm-4">
       <h2 class="main_carousel_title">
         Get fascinated
       </h2>
       <p>by the beauty and excellent craftmanship Lorem ipsum dolor sit amet...
       <br><br>Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cu...</p>
-    </div>
+    </section>
     <div class="col-sm-8 main_carousel--right">
-      <!-- <img src="img/ui/carousel_s2.jpg"> -->
+      <!-- <img src="img/ui/carousel_s2.jpg" alt=""> -->
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-4">
+    <section class="col-sm-4">
       <h2 class="main_carousel_title">
         Lorem ipsum...
       </h2>
       <p>Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cu...</p>
-    </div>
+    </section>
     <div class="col-sm-8 main_carousel--right">
-      <!-- <img src="img/ui/carousel_s3.jpg"> -->
+      <!-- <img src="img/ui/carousel_s3.jpg" alt=""> -->
     </div>
   </div>
 </div>

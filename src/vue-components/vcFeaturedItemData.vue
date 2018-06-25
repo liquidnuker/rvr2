@@ -1,12 +1,13 @@
 <template>
 <div>
-  <div class="row featured_item_data" id="featured_item_data">
+  <div class="row featured_item_data" aria-live="assertive"
+    aria-atomic="true" aria-relevant="all">
     <a v-bind:href="'index.html#/radios/' + featuredItemType + '/' + featuredItemId" class="item_id">
       <h2>{{ featuredItemId }}</h2>
     </a><br>
     <a v-bind:href="'index.html#/radios/' + featuredItemType + '/' + featuredItemId" class="item_id">
-      <img v-if="featuredItemType" :src="'img/' + featuredItemType + '/' + 
-      featuredItemImg + '_thumb.jpg'">
+      <img v-if="featuredItemType" :src="'img/' + featuredItemType + '/' +
+      featuredItemImg + '_thumb.jpg'" :alt="featuredItemType + ' ' + featuredItemId + ' image'" :title="featuredItemType + ' ' + featuredItemId + ' image'">
     </a>
     <p>Make: {{ featuredItemMake }}</p>
     <p>Model: {{ featuredItemModel }}</p>

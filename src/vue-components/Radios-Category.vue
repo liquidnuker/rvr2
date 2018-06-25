@@ -1,7 +1,7 @@
 <template>
 <div>
   <!--right side-->
-  <section class="col-sm-9">
+  <div class="col-sm-9">
     <!-- begin category description -->
     <div class="row category_description" id="category_description">
       <vcCatDesc
@@ -152,7 +152,7 @@
     </main>
     <!--/content box-->
     <!--/main item box-->
-  </section>
+  </div>
   <!--end right side-->
 </div>
 </template>
@@ -169,7 +169,6 @@ import {pageBtns} from "../js/pagebtns.js";
 import {jsonDir} from "../js/jsondir.js";
 
 const vcCatDesc = () => import ('./vcCatDesc.vue');
-const vcFooter = () => import ('./vcFooter.vue');
 
 export default {
   data() {
@@ -203,7 +202,6 @@ export default {
     },
     components: {
       vcCatDesc: vcCatDesc,
-      vcFooter: vcFooter
     },
     mounted: function () {
       this.checkCategory();

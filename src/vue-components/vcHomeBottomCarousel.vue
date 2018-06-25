@@ -3,16 +3,16 @@
 <!-- siema2 -->
 <div class="col-sm-12 brand_carousel">
   <div>
-    <img src="">
+    <img src="" alt="" title="">
   </div>
   <div>
-    <img src="">
+    <img src="" alt="" title="">
   </div>
   <div>
-    <img src="">
+    <img src="" alt="" title="">
   </div>
   <div>
-    <img src="">
+    <img src="" alt="" title="">
   </div>
   <div>
     <!-- <img src="img/brands/brand1.jpg"> -->

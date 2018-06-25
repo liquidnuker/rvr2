@@ -23,7 +23,7 @@
 // end breakpoints
 
 .footer1 {
-  section {
+  .footer1_container {
     @extend %pos--relative;
     min-height: 220px;
   }

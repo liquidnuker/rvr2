@@ -6,7 +6,9 @@
       <p class="catdesc_description">{{ prCategoryDescription }}</p>
     </div>
     <div class="col-sm-12 col-md-8 catdesc_preview">
-      <img v-bind:src="'img/' + prCategoryPreview">
+      <img v-bind:src="'img/' + prCategoryPreview" 
+      :alt="prCategoryTitle + ' category'" 
+      :title="prCategoryTitle + ' category'">
     </div>
   </div>
 </div>
