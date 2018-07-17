@@ -80,7 +80,7 @@ export default {
     }
     },
     mounted: function () {
-      this.getRandomItem();
+      // this.getRandomItem();
     }
 }
 </script>
