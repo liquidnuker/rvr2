@@ -129,7 +129,7 @@
             </div>
             <!-- /close bg skew -->
             <a v-bind:href="'index.html#/radios/' + categoryName + '/' + i.id">
-              <img v-bind:src="'img/' + categoryName + '/' +
+              <img v-bind:src="'img/categories/' + categoryName + '/' +
               i.img + '_thumb.jpg'" v-bind:id="i.id" v-bind:alt="i.id">
             </a>
             <div class="ajaxboxText">

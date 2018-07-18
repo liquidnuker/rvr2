@@ -131,7 +131,7 @@
             <div class="ajaxbox-bg-skew">
             </div>
             <!-- /close bg skew -->
-            <img v-bind:src="'img/' + currentCategory + '/' + i.img + '_thumb.jpg'" v-bind:id="i.id" v-bind:alt="i.id"
+            <img v-bind:src="'img/categories/' + currentCategory + '/' + i.img + '_thumb.jpg'" v-bind:id="i.id" v-bind:alt="i.id"
             v-on:click="pushRoute(currentCategory, i.id)">
             <div class="ajaxboxText">
               <h2 class="model" v-bind:id="i.id">{{ i.model }}</h2><br>

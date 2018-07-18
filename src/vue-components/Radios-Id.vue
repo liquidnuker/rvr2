@@ -37,8 +37,8 @@
       <div v-for="i in filteredId" class="item-description">
         <div class="row">
           <div class="col-sm-6 radios_id_photo">
-            <a v-bind:href="'img/' + currentCategory + '/' + i.img + '_full.jpg'">
-              <img v-bind:src="'img/' + currentCategory + '/' + i.img + '_full.jpg'">
+            <a v-bind:href="'img/categories/' + currentCategory + '/' + i.img + '_full.jpg'">
+              <img v-bind:src="'img/categories/' + currentCategory + '/' + i.img + '_full.jpg'">
             </a>
           </div>
           <div class="col-sm-6 radios_id_desc">
