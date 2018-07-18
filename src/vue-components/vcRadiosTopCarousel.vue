@@ -12,7 +12,7 @@
       <p>{{ i.description }}</p>
     </div>
     <div class="col-sm-8 main_carousel--right">
-      <img v-bind:src="'img/' + i.preview">
+      <img v-bind:src="'img/ui/stage/cat_' + i.preview + '.jpg'">
     </div>    
   </div>
   <!-- siema row -->

@@ -2,49 +2,49 @@
   {
   "category": "bakelite",
   "title":  "Bakelite",
-  "preview": "categories/bakelite.jpg",
+  "preview": "bakelite",
   "description": "bakelite category description"
   },
   {
   "category": "crystal",
   "title":  "Crystal",
-  "preview": "categories/crystal.jpg",
+  "preview": "crystal",
   "description": "crystal category description"
   },
   {
   "category": "horntype",
   "title":  "Horntype",
-  "preview": "categories/horntype.jpg",
+  "preview": "horntype",
   "description": "horntype category description"
   },
   {
   "category": "minitube",
   "title":  "Minitube",
-  "preview": "categories/minitube.jpg",
+  "preview": "minitube",
   "description": "minitube category description"
   },
   {
   "category": "portable",
   "title":  "Portable",
-  "preview": "categories/portable.jpg",
+  "preview": "portable",
   "description": "portable category description"
   },
   {
   "category": "transistor",
   "title":  "Transistor",
-  "preview": "categories/transistor.jpg",
+  "preview": "transistor",
   "description": "transistor category description"
   },
   {
   "category": "unusual",
   "title":  "Unusual",
-  "preview": "categories/unusual.jpg",
+  "preview": "unusual",
   "description": "unusual category description"
   },
   {
   "category": "woodcase",
   "title":  "Woodcase",
-  "preview": "categories/woodcase.jpg",
+  "preview": "woodcase",
   "description": "woodcase category description"
   }
 ]}
