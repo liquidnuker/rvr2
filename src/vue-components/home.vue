@@ -67,7 +67,7 @@ vcHomeBottomCarousel: vcHomeBottomCarousel,
 },
 methods: {},
 mounted: function () {
-  console.log("home.vue mountes");
+  
 }
 }
 </script>
