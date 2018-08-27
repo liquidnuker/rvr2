@@ -200,14 +200,13 @@ export default {
   },
   methods: {
       loadRandomCategory: function() {
-        let selectedItems = shuffleCategories(radioCategories);
-        let dataz = selectedItems[0];
-        const jsonUrl = this.API_DIR + dataz + ".json";
+        let item = shuffleCategories(radioCategories)[0];
+        const jsonUrl = this.API_DIR + item + ".json";
             
         axios.get(jsonUrl)
         .then((response) => {
-          this.categoryName = dataz;
-          this.randomCategory = response.data[dataz];
+          this.categoryName = item;
+          this.randomCategory = response.data[item];
         })
         .then(() => {
           this.activatePager();
@@ -234,7 +233,6 @@ export default {
         this.changePageBtns();
       },
       changePerPage: function (perPage) {
-        console.log(perPage);
         this.perPage = perPage;
         this.activatePager();
       },

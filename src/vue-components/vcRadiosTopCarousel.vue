@@ -39,17 +39,14 @@ export default {
       
       axios.get(jsonUrl)
         .then((response) => {
-          // shuffle then inject to categories
           this.categories = shuffleCategories(response.data.catdesc);
         })
         .then(() => {
           this.activateCarousel();
-
         })
         .catch((error) => {
           console.log(error);
-        });
-      
+        });      
     },
     activateCarousel: function() {
       const topCarousel = new Siema({

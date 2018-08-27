@@ -144,16 +144,14 @@ export default {
         
         axios.get(jsonUrl)
         .then((response) => {
-          filteredItem = response.data[this.currentCategory].filter((el) => {
-            return el.id === this.$route.params.id;
-          });
+          filteredItem = response.data[this.currentCategory].filter((el) => el.id === this.$route.params.id);
         })
         .then(() => {
           // check if id is undefined
           if (!filteredItem[0]) {
             console.log("radios id 404");
             // redirect to home instead of 404
-            router.push({path: "/"});
+            // router.push({path: "/"});
 
           } else {
             // attach to filteredId display + breadcrumb
@@ -176,9 +174,7 @@ export default {
         // filter description to show based on this.currentCategory
       axios.get(catDescUrl)
         .then((response) => {
-          filteredDescription = response.data.catdesc.filter((el) => {
-            return el.category === this.currentCategory;
-          });
+          filteredDescription = response.data.catdesc.filter((el) => el.category === this.currentCategory);
         })
         .then(() => {
           // set category description

@@ -53,26 +53,23 @@ export default {
     },
     methods: {
     getRandomItem: function () {
-      let selectedItems = shuffleCategories(radioCategories);
-      let dataz = selectedItems[0];
+      let item = shuffleCategories(radioCategories)[0];
       let featuredItem;
-      const jsonUrl = this.API_DIR + dataz + ".json";
+      let jsonUrl = this.API_DIR + item + ".json";
 
       axios.get(jsonUrl)
         .then((response) => {
-          // console.log(data[dataz][0].id); ok
-          featuredItem = response.data[dataz];
+          featuredItem = response.data[item];
         })
         .then(() => {
           // randomize array length
-          const x = getRandomInt(0, featuredItem.length);
+          let index = getRandomInt(0, featuredItem.length);
 
-          this.featuredItemType = dataz;
-          this.featuredItemId = featuredItem[x].id;
-          this.featuredItemImg = featuredItem[x].img;
-          this.featuredItemMake = featuredItem[x].make;
-          this.featuredItemModel = featuredItem[x].model;
-
+          this.featuredItemType = item;
+          this.featuredItemId = featuredItem[index].id;
+          this.featuredItemImg = featuredItem[index].img;
+          this.featuredItemMake = featuredItem[index].make;
+          this.featuredItemModel = featuredItem[index].model;
         })
         .catch(function (error) {
           console.log(error);

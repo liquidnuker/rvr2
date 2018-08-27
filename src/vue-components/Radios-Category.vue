@@ -176,7 +176,7 @@ export default {
         API_DIR: jsonDir,
         
         // radio displays
-        currentItems: store.currentItems,
+        currentItems: "",
         currentCategory: "",
         itemList: "", // paginated items
 
@@ -243,10 +243,9 @@ export default {
         .then((response) => {
           // inject to store itemList 
           store.currentItems = response.data[this.currentCategory];
-          // console.log(store.itemList.length + ": " + self.currentCategory);
         })
         .then(() => {
-          this.refreshItems();
+          this.currentItems = store.currentItems;
         })
         .then(() => {
           this.activatePager();
@@ -263,9 +262,8 @@ export default {
         
       axios.get(catDescUrl)
         .then((response) => {
-          filteredDescription = response.data.catdesc.filter((el) => {
-            return el.category === this.currentCategory;
-          });
+          filteredDescription = response.data.catdesc.filter((el) => 
+            el.category === this.currentCategory);
         })
         .then(() => {
           // set category description
@@ -301,7 +299,6 @@ export default {
       this.changePageBtns();
     },
     changePerPage: function(perPage) {
-      console.log(perPage);
       this.perPage = perPage;
       this.activatePager();
     },
