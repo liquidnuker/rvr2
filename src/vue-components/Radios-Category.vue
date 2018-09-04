@@ -14,7 +14,7 @@
     <!--begin subheader-->
     <div class="row row_subheader">
       <div class="col-sm-12">
-        <p id="details">details</p>
+        <p id="details">&nbsp;</p>
       </div>
     </div>
     <!--/subheader-->

@@ -30,3 +30,12 @@
 // show the active breakpoint (_mq.scss)
 // ==================================================/
 // @include mq-show-breakpoints;
+
+body, 
+.btn {
+  font-family: "Andada", serif;
+}
+
+h2 {
+  font-weight: bold;
+}
